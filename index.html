@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech and Speech to Text</title>
+    <title>Enhanced Text to Speech and Speech to Text</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Text to Speech & Speech to Text Converter</h1>
-        <textarea id="text-input" placeholder="Type here for text-to-speech..."></textarea>
+        <h1>Enhanced Text to Speech & Speech to Text Converter</h1>
+        <textarea id="text-input" placeholder="Type here for text-to-speech..." aria-label="Input text for speech"></textarea>
         <button onclick="speakText()">Speak Text</button>
-        <button onclick="startListening()">Start Listening</button>
-        <p id="speech-output">Speech output will appear here...</p>
+        <button id="listen-btn" onclick="toggleListening()">Start Listening</button>
+        <p id="speech-output" aria-live="polite">Speech output will appear here...</p>
     </div>
     <script src="js/script.js"></script>
 </body>
